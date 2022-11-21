@@ -1,6 +1,7 @@
 import pandas as pd
 import autoprocessing
 
+
 class preprocessing:
     def __init__(self, df):
         self.usable = False
@@ -10,7 +11,6 @@ class preprocessing:
         
         if self.assert_flash_libre(df):
             self.convert_flash_libre(df)
-            
         else:
             # output can return whether it's usable or not usable
             # can we also store feedback of why it didn't work?
